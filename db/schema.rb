@@ -11,28 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 3) do
 
   create_table "tweets", force: :cascade do |t|
     t.string  "content"
     t.integer "user_id"
-=======
-ActiveRecord::Schema.define(version: 2) do
-
-  create_table "tweets", force: :cascade do |t|
-    t.string "content"
->>>>>>> 2384bb07928b795dab0c79785230a687dd6302fe
   end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "email"
-<<<<<<< HEAD
     t.string "password_digest"
-=======
-    t.string "password"
->>>>>>> 2384bb07928b795dab0c79785230a687dd6302fe
   end
 
 end
