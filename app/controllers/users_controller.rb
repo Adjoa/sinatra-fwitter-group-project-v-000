@@ -47,21 +47,9 @@ class UsersController < ApplicationController
     end
   end
 
-<<<<<<< HEAD
   get '/users/:slug' do
     @tweets = User.find_by_slug(params[:slug]).tweets
     erb:'/users/show'
-=======
-  post '/login' do
-    @user = User.find_by(username: params[:username]).authenticate(params[:password])
-
-    if @user
-      session[:user_id] = @user.id
-      redirect '/tweets'
-    else
-      redirect '/login'
-    end
->>>>>>> 2384bb07928b795dab0c79785230a687dd6302fe
   end
 
 end
